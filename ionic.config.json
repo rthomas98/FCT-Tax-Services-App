@@ -1,5 +1,7 @@
 {
   "name": "fctTax",
-  "integrations": {},
+  "integrations": {
+    "capacitor": {}
+  },
   "type": "angular"
 }
