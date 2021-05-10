@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { DomSanitizer, SafeResourceUrl} from '@angular/platform-browser';
+
 
 @Component({
   selector: 'app-contact',
@@ -7,9 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContactPage implements OnInit {
 
-  constructor() { }
+  contactUrl:SafeResourceUrl;
+  constructor(private domSatizer:DomSanitizer) { }
 
   ngOnInit() {
+    this.contactUrl =
+    this.domSatizer.bypassSecurityTrustResourceUrl("https://fcttax.com/mobile-contact-us/");
   }
 
 }
