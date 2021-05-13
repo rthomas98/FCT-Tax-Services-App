@@ -12,7 +12,8 @@
   "cordova": {},
   "server": {
     "allowNavigation": [
-        "https://fcttax.com/mobile-schedule/"
+        "https://fcttax.com/mobile-schedule/",
+        "https://fcttax.com/mobile-contact-us/"
     ]
 }
 }
